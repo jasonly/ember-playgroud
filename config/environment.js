@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ember-playground',
+    podModulePrefix: 'ember-playground/pods',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
