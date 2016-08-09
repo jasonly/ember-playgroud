@@ -1,5 +1,5 @@
 import Ember from 'ember';
-// import InfinityRoute from "ember-infinity/mixins/route";
+import InfinityRoute from "ember-infinity/mixins/route";
 
 // let rentals = [{
 //   id: 1,
@@ -27,8 +27,12 @@ import Ember from 'ember';
 //   image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg'
 // }];
 
-export default Ember.Route.extend({
+export default Ember.Route.extend(InfinityRoute, {
+	// model() {
+	// 	return this.get('store').findAll('infinitescroll');
+	// }
 	model() {
-		return this.get('store').findAll('infinitescroll');
+	  /* Load pages of the Product Model, starting from page 1, in groups of 12. */
+	  return this.infinityModel("infinitescroll", { perPage: 12, startingPage: 1 });
 	}
 });
