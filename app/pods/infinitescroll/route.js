@@ -5,7 +5,7 @@ export default Ember.Route.extend(InfinityRoute, {
 	model() {
 		/* Load pages of the Product Model, starting from page 1, in groups of 10. */
 		let params = {
-			perPage: 10,
+			perPage: 5,
 			startingPage: 1
 		};
 
