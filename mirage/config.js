@@ -24,8 +24,12 @@ export default function() {
     http://www.ember-cli-mirage.com/docs/v0.2.x/shorthands/
   */
 
-  this.get('/infinitescrolls', (schema, request) => {
-    console.log('REQUEST WHAT IS IT EVEN FOR: ', request);
+  // this.get('/infinitescrolls', (schema, request) => {
+  //   console.log('REQUEST WHAT IS IT EVEN FOR: ', request);
+  //   return schema.infinitescrolls.all();
+  // });
+
+  this.get('/infinitescrolls', (schema) => {
     return schema.infinitescrolls.all();
   });
 }
