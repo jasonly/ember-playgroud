@@ -7,10 +7,13 @@
 import { Serializer } from 'ember-cli-mirage';
 
 export default Serializer.extend({
-	serialize(res) {
+	serialize(res, req) {
+		let page = parseInt(req.queryParams.page, 10);
+		let per =  parseInt(req.queryParams.per_page, 10);
+
 		let data = [];
 
-
+		// will need to move this to it's own serializer instead of putting it at the application level
 		res.models.forEach(function(item, i) {
 			let taco = {
 				attributes: item.attrs,
@@ -22,11 +25,13 @@ export default Serializer.extend({
 		});
 
 		let payload = {
-			data: data,
+			data: data.slice((page - 1) * per, Math.min((page) * per, data.length)),
 			meta: {
-				total_pages: 4
+				total_pages: Math.ceil(data.length/per)
 			}
 		};
+
+		console.log('PL: ', payload);
 
 		return payload;
 	}
