@@ -1,3 +1,5 @@
-{{card-item model=model}}
+{{#each model as |item|}}
+	{{card-item item=item}}
+{{/each}}
 
 {{infinity-loader infinityModel=model}}
