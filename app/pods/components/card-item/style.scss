@@ -1,34 +1,16 @@
 .card-item {
 	display: flex;
 	align-items: center;
+	margin-bottom: 4px;
 
 	.card-image {
 		height: 60px;
 		width: 60px;
 		border-radius: 10px;
-		margin-right: 10%;
+		margin-right: 5%;
 	}
 
 	.card-details {
 		margin-right: 50%;
 	}
 }
-
-
-// .titles {
-// 	h5, p {
-// 		margin: 0;
-// 		color: white;
-// 	}
-	
-// 	h5 {
-// 		font-size: 17px;
-// 		font-weight: 400;
-// 		margin-bottom: 7px;
-// 	}
-	
-// 	p {
-// 		font-size: 13px;
-// 		color: #929292;
-// 	}
-// }

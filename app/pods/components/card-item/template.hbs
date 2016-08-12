@@ -1,8 +1,23 @@
+{{!-- actually maybe this should be a selector for various types of data types which would be a helper to load the correct component --}}
+
+{{!-- card-item
+	- card-book
+	- card-tv
+	- card-movie --}}
+
 <img class="card-image" src="{{item.avatar}}">
 <div class="card-details">
-	<h5>{{item.name}}</h5>
+	<p>{{item.name}}</p>
+	<p>{{item.age}}</p>
+	<p>{{item.age}}</p>
 	<p>{{item.age}}</p>
 </div>
 <div class="card-price">
 	<p>$2.99</p>
+	{{item.type}}
 </div>
+
+{{!-- use the component to add up all the prices and return the total at the bottom --}}
+{{!-- 
+the images should be the same height 
+everything is constrained to the the square aspect ratio --}}
