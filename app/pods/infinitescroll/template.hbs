@@ -1,6 +1,5 @@
 {{#each model as |item|}}
-	<h1>{{item.name}}</h1>
-	<h2>{{item.age}}</h2>
+	{{card-item item=item}}
 {{/each}}
 
 {{infinity-loader infinityModel=model}}
