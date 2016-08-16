@@ -1,7 +1,9 @@
 <ul class="cards">
 {{#each model as |item|}}
-	{{card-item item=item}}
+	{{#link-to "details" tagName="li"}}
+    {{card-item item=item}}
+  {{/link-to}}
 {{/each}}
 </ul>
 
-{{!infinity-loader infinityModel=model}}
+{{infinity-loader infinityModel=model}}
