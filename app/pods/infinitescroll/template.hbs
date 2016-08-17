@@ -1,7 +1,7 @@
 <ul class="cards">
 {{#each model as |item|}}
   {{#link-to "details" tagName="li"}}
-    {{card-item item=item}}
+    {{component (concat 'card-item/' item.type) item=item}}
   {{/link-to}}
 {{/each}}
 </ul>
