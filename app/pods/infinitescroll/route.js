@@ -10,11 +10,5 @@ export default Ember.Route.extend(InfinityRoute, {
 		};
 
 		return this.infinityModel('infinitescroll', params);
-	},
-
-  actions: {
-    toRoute(params) {
-      Ember.Logger.debug('need to change route', params);
-    }
-  }
+	}
 });
