@@ -1,17 +1,17 @@
 .card-item {
-	display: flex;
-	align-items: center;
-	margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
   border-bottom: 1px solid #eee;
 
-	.card-image {
-		height: 60px;
-		width: 60px;
-		border-radius: 10px;
-		margin-right: 5%;
-	}
+  .card-image {
+   height: 60px;
+   width: 60px;
+   border-radius: 10px;
+   margin-right: 5%;
+  }
 
-	.card-details {
-		margin-right: 50%;
-	}
+  .card-details {
+   margin-right: 50%;
+  }
 }

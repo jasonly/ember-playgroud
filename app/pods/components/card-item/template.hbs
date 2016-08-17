@@ -1,19 +1,18 @@
 {{!-- actually maybe this should be a selector for various types of data types which would be a helper to load the correct component --}}
 
-{{!-- card-item
-	- card-book
-	- card-tv
-	- card-movie --}}
+{{!-- card-apple
+  - card-orange
+  - card-banana
+  - card-peach --}}
 <img class="card-image" src="{{item.avatar}}">
 <div class="card-details">
-	<p>{{item.name}}</p>
-	<p>{{item.age}}</p>
-	<p>{{item.age}}</p>
-	<p>{{item.age}}</p>
+  <p>{{item.name}}</p>
+  <p>{{item.sentence}}</p>
+  <p>{{item.age}}</p>
+  <p>{{item.word}}</p>
 </div>
 <div class="card-price">
-	<p>$2.99</p>
-	{{item.type}}
+  <p>${{item.price}}</p>
 </div>
 {{!-- use the component to add up all the prices and return the total at the bottom --}}
 {{!--
