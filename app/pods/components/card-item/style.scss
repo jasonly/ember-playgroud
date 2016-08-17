@@ -1,17 +1,38 @@
 .card-item {
-	display: flex;
-	align-items: center;
-	margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
   border-bottom: 1px solid #eee;
+  box-sizing: border-box;
+}
 
-	.card-image {
-		height: 60px;
-		width: 60px;
-		border-radius: 10px;
-		margin-right: 5%;
-	}
+.card-image {
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  margin-right: 5%;
+}
 
-	.card-details {
-		margin-right: 50%;
-	}
+.card-details {
+  margin-right: 50%;
+}
+
+.apple {
+  background-color: #dc7a7a;
+}
+
+.banana {
+  background-color: #dcc57a;
+}
+
+.grape {
+  background-color: #9b7adc;
+}
+
+.orange {
+  background-color: #dc977a;
+}
+
+.peach {
+  background-color: #7aacdc;
 }
