@@ -2,6 +2,7 @@
 {{#each model as |item|}}
   {{#link-to "details" tagName="li"}}
     {{component (concat 'card-item/' item.type) item=item}}
+    {{!-- {{card-item item=item}} --}}
   {{/link-to}}
 {{/each}}
 </ul>
